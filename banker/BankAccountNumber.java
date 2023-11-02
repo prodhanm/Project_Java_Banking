@@ -8,11 +8,7 @@ public class BankAccountNumber {
         this.bankAccountNumber = generateBankAccountNumber();
     }
 
-    public String getBankAccountNumber() {
-        return bankAccountNumber;
-    }
-
-    private String generateBankAccountNumber() {
+     private String generateBankAccountNumber() {
         StringBuilder bankAccountNumber = new StringBuilder();
         SecureRandom secureRandom = new SecureRandom();
 
@@ -22,4 +18,9 @@ public class BankAccountNumber {
         }
         return bankAccountNumber.toString();
     }
+
+    public String getBankAccountNumber() {
+        return bankAccountNumber;
+    }
+
 }
