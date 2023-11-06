@@ -8,7 +8,7 @@ public class BankAccountNumber {
         this.bankAccountNumber = generateBankAccountNumber();
     }
 
-     private String generateBankAccountNumber() {
+    private String generateBankAccountNumber() {
         StringBuilder bankAccountNumber = new StringBuilder();
         SecureRandom secureRandom = new SecureRandom();
 

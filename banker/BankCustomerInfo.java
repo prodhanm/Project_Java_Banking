@@ -26,7 +26,6 @@ public class BankCustomerInfo extends BankUser{
         this.address = address;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        ;
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
