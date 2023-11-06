@@ -22,7 +22,7 @@ public class BankerInfo {
         // Similar to the use of a decorator in python. It works the same way in Java if used
         // correctly. The decorator class is in the decor package.  The decorator class is
         // instantiated below.
-        Decorator decorator = new Decorator();
+        new Decorator();
         System.out.println("Account number: " + accountNumber.getBankAccountNumber());
         System.out.println("User ID: " + customer.getId());
         System.out.println("User name: " + customer.getUserName()); 
@@ -40,6 +40,7 @@ public class BankerInfo {
             FileWriter writer = new FileWriter("customer_data.txt");
             writer.write("Account number: " + accountNumber.getBankAccountNumber() + "\n");
             writer.write("Customer ID: " + customer.getId() + "\n");
+            writer.write("User Name: " + customer.getUserName() + "\n");
             writer.write("Customer name: " + customer.getName() + "\n");
             writer.write("Customer address: " + customer.getAddress() + "\n");
             writer.write("Customer city: " + customer.getCity() + "\n");

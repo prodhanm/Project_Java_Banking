@@ -10,7 +10,7 @@ public class UserAuth extends BankUser {
     }
     public static void main(String[] args) {
             //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            Decorator decorator = new Decorator();
+            new Decorator();
             BankUser bankUser = new BankUser(1, "John", "123456");
             System.out.println("User Name: " + bankUser.getUserName());
             System.out.println("Password: " + bankUser.getPassword());
