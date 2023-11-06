@@ -6,7 +6,6 @@ import decor.Decorator;
 
 public class BankerInfo {
     public static void main(String[] args) {
-        // create an instance of the BankAccountNumber class
         BankAccountNumber accountNumber = new BankAccountNumber();
         //BankUser user = new BankUser(1, "John", "123456");
         String email = "john.doe@gmail.com";
