@@ -1,5 +1,7 @@
 package banker;
 
+import auth_user.BankUser;
+
 public class BankCustomerInfo extends BankUser{
     
     private String name;

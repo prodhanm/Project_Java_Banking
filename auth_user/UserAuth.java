@@ -1,28 +1,31 @@
 package auth_user;
 
-import banker.BankUser;
-import decor.Decorator;
+public class UserAuth {
+    private BankUser bankUser;
 
-public class UserAuth extends BankUser {
-    
-    public UserAuth(int id, String userName, String password) {
-        super(id, userName, password);
+    public UserAuth(BankUser bankUser) {
+        this.bankUser = bankUser;
     }
-    public static void main(String[] args) {
-            //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            new Decorator();
-            BankUser bankUser = new BankUser(1, "John", "123456");
+
+    public boolean authenticate(int id, String userName, String password) {
+        if (bankUser.getId() == id) {
+            if (bankUser.getUserName().equals(userName) && bankUser.getPassword().equals(password)) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+}
+   
+
+    
+
+/*  
+ *  BankUser bankUser = new BankUser(1, "jdoe", "password");
             System.out.println("User Name: " + bankUser.getUserName());
             System.out.println("Password: " + bankUser.getPassword());
 
             String userName = bankUser.getUserName();
             String password = bankUser.getPassword();
-            
-            if (bankUser.getUserName().equals(userName) && bankUser.getPassword().equals(password)) {
-                System.out.println("User authenticated successfully.");
-            } else {
-                System.out.println("Invalid username or password.");
-            }    
-        }
-    }
-
+*/
