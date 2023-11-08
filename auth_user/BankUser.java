@@ -26,6 +26,7 @@ public class BankUser {
         this.zipCode = zipCode;
         this.phoneNumber = phoneNumber;
         this.email = email;*/
+        //delete this when done
     }
 
     public String getId(){

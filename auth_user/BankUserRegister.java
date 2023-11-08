@@ -34,7 +34,7 @@ public class BankUserRegister extends BankUser {
         String userName = input.nextLine();
         writer.write("User Name: " + userName + "\n");
 
-    
+        //Tech debt:  Need to enable password masking.
         System.out.print("Enter password: ");
         String password = input.nextLine();
         writer.write("User password: " + password + "\n");
@@ -70,6 +70,8 @@ public class BankUserRegister extends BankUser {
         System.out.print("Enter email: ");
         String email = input.nextLine();
         writer.write("Customer email: " + email + "\n");
+
+        System.out.println("Customer data saved to file.");
 
         input.close();
         writer.close();
