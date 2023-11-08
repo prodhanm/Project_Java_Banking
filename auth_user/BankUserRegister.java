@@ -21,7 +21,7 @@ public class BankUserRegister extends BankUser {
         super();
     }
 
-    public BankUserRegister(int id, String userName, String password) {
+    public BankUserRegister() {
     }
 
     public static void main(String[] args) throws IOException{

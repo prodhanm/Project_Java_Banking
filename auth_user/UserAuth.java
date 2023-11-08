@@ -6,7 +6,7 @@ public class UserAuth extends BankUserRegister{
                     String userName, 
                     String password 
                     ) {
-        super(id,userName,password);
+        super();
     }
 
     public boolean authenticate(String userName, String password) {
