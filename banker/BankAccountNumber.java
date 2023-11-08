@@ -1,4 +1,5 @@
 package banker;
+
 import java.security.SecureRandom;
 
 public class BankAccountNumber {
