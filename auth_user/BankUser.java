@@ -16,17 +16,7 @@ public class BankUser {
     private String email;
 
     public BankUser(){
-       /*  this.userName = userName;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zipCode = zipCode;
-        this.phoneNumber = phoneNumber;
-        this.email = email;*/
-        //delete this when done
+       
     }
 
     public String getId(){

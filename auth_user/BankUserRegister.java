@@ -29,7 +29,7 @@ public class BankUserRegister extends BankUser {
         BankUser bankUser = new BankUser();
         Scanner input = new Scanner(System.in);
         FileWriter writer = new FileWriter("customer_data.txt");
-
+        
         System.out.println("Id Number: " + bankUser.getId());
         writer.write("Customer ID: " + bankUser.getId() + "\n");
 

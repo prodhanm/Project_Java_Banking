@@ -13,8 +13,6 @@ public class BankerInfo {
            instantiated below.
         */
         new Decorator();
-        System.out.println("Account number: " + accountNumber.getBankAccountNumber());
-        // the FileWriter class is used to write to a file by appending data to the file.
         try {
             FileWriter accWriter = new FileWriter("customer_data.txt", true);
             //writer.write("user name: mufassa\n");
