@@ -1,5 +1,7 @@
 package auth_user;
 
+import java.security.SecureRandom;
+
 public class BankUser {
     private int id;
     private String userName;
@@ -13,9 +15,8 @@ public class BankUser {
     private String phoneNumber;
     private String email;
 
-    public BankUser(int id, String userName, String password, String firstName, String lastName, String address, String city, String state, String zipCode, String phoneNumber, String email){
-        this.id = id;
-        this.userName = userName;
+    public BankUser(){
+       /*  this.userName = userName;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -24,11 +25,17 @@ public class BankUser {
         this.state = state;
         this.zipCode = zipCode;
         this.phoneNumber = phoneNumber;
-        this.email = email;
+        this.email = email;*/
     }
 
-    public int getId(){
-        return id;
+    public String getId(){
+        StringBuilder idNumber = new StringBuilder();
+        SecureRandom secureRandomId = new SecureRandom();
+        for (int i = 0; i < 26; i++) {
+            int id = secureRandomId.nextInt(10);
+            idNumber.append(id);
+        }
+        return idNumber.toString();
     }
 
     public void setId(int id){
