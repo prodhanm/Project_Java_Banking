@@ -1,17 +1,21 @@
 package menu;
 
+import decor.Decorator;
 import auth_user.BankUserRegister;
 import auth_user.LoginUser;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class BankUserMenu {
     //private static final String LoginUser = null;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
 
         while (!exit) {
+            new Decorator();
             System.out.println("Welcome to the Bank User Menu!");
             System.out.println("1. Register a new user");
             System.out.println("2. Login as an existing user");
@@ -22,7 +26,7 @@ public class BankUserMenu {
 
             switch (choice) {
                 case 1:
-                    new BankUserRegister();
+                    BankUserRegister.main(args);
                     break;
                 case 2:
                     System.out.print("Enter Username: ");
@@ -40,6 +44,7 @@ public class BankUserMenu {
             }
 
         }
+        scanner.close();
     }
 }
             

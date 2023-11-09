@@ -21,7 +21,7 @@ public class BankUserRegister extends BankUser {
         super();
     }
 
-    public BankUserRegister() {
+    public BankUserRegister(Object object) {
         
     }
 
@@ -80,4 +80,5 @@ public class BankUserRegister extends BankUser {
         input.close();
         writer.close();
     }
+
 }
