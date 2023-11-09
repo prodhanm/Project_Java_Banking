@@ -15,7 +15,6 @@ public class BankerInfo {
         new Decorator();
         try {
             FileWriter accWriter = new FileWriter("customer_data.txt", true);
-            //writer.write("user name: mufassa\n");
             accWriter.write("account number: " + accountNumber.getBankAccountNumber() + "\n");
             accWriter.close();
             System.out.println("Account number saved to file.");

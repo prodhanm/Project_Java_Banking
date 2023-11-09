@@ -21,7 +21,7 @@ public class BankUserRegister extends BankUser {
         super();
     }
 
-    public BankUserRegister(Object object) {
+    public BankUserRegister() {
         
     }
 
@@ -29,7 +29,7 @@ public class BankUserRegister extends BankUser {
         new Decorator();
         BankUser bankUser = new BankUser();
         Scanner input = new Scanner(System.in);
-        FileWriter writer = new FileWriter("customer_data.txt");
+        FileWriter writer = new FileWriter("customer_data.txt", true);
         
         System.out.println("Id Number: " + bankUser.getId());
         writer.write("Customer ID: " + bankUser.getId() + "\n");
@@ -75,10 +75,14 @@ public class BankUserRegister extends BankUser {
         String email = input.nextLine();
         writer.write("Customer email: " + email + "\n");
 
+        System.out.println("\n");
+
         System.out.println("Customer data saved to file.");
 
         input.close();
         writer.close();
+
+        
     }
 
 }

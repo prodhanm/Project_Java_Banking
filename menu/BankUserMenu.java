@@ -3,14 +3,13 @@ package menu;
 import decor.Decorator;
 import auth_user.BankUserRegister;
 import auth_user.LoginUser;
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class BankUserMenu {
     //private static final String LoginUser = null;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
+        try {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
 
@@ -42,9 +41,13 @@ public class BankUserMenu {
                     System.out.println("Invalid choice. Please try again.");
                     break;
             }
-
+            
         }
         scanner.close();
     }
+        catch (Exception e) {
+            System.out.println("Done.");
+        }
+    } 
 }
             
