@@ -37,6 +37,10 @@ public class BankUser {
         return userName;
     }
 
+    public void setUserName(String userName){
+        this.userName = userName;
+    }
+
     public String getPassword(){
         int passwordLength = password.length();
         String hiddenPassword = "";

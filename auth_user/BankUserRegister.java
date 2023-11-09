@@ -22,6 +22,7 @@ public class BankUserRegister extends BankUser {
     }
 
     public BankUserRegister() {
+        
     }
 
     public static void main(String[] args) throws IOException{
