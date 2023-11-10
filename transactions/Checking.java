@@ -12,17 +12,19 @@ public class Checking {
         System.out.print("Enter initial balance: ");
         double balance = scanner.nextDouble();
         transaction.deposit(balance);
-        System.out.println("Your current balance is: " + transaction.checkBalance());
+        new Balance().printBalance();
 
         System.out.print("Enter deposit amount: ");
         double deposit = scanner.nextDouble();
         transaction.deposit(deposit);
-        System.out.println("Your current balance is: " + transaction.checkBalance());
+        new Balance().printBalance();
 
         System.out.print("Enter withdrawal amount: ");
         double withdrawal = scanner.nextDouble();
         transaction.withdraw(withdrawal);
-        System.out.println("Your current balance is: " + transaction.checkBalance());
+        new Balance().printBalance();
+
+        scanner.close();
 
     }
 
