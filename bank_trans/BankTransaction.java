@@ -11,7 +11,7 @@ public class BankTransaction implements Transaction {
 
     @Override
     public double checkBalance() {
-        balance = balance + prevTransaction;
+        balance += balance;
         return balance;
     }
 
@@ -41,6 +41,9 @@ public class BankTransaction implements Transaction {
             System.out.println("No transaction occurred.");
         }
         return prevTransaction;
+    }
+
+    public void checkBalance(String string) {
     }
 
 
