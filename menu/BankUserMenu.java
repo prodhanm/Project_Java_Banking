@@ -33,6 +33,7 @@ public class BankUserMenu {
                     System.out.print("Enter Password: ");
                     String password = scanner.nextLine();
                     LoginUser.authenticateUser(username, password);
+                    TransMenu.main(args);
                     break;
                 case 3:
                     exit = true;

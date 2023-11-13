@@ -2,12 +2,12 @@ package banker;
 
 import java.io.FileWriter;
 import java.io.IOException;
-//import auth_user.BankUser;
 import decor.Decorator;
 
 public class BankerInfo {
     public static void main(String[] args) {
         BankAccountNumber accountNumber = new BankAccountNumber();  
+        //BankUserRegister bankReg = new BankUserRegister();
         /* Similar to the use of a decorator in python. It works the same way in Java if used
            correctly. The decorator class is in the decor package.  The decorator class is
            instantiated below.

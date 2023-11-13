@@ -7,6 +7,7 @@ public class BankAccountNumber {
 
     public BankAccountNumber() {
         this.bankAccountNumber = generateBankAccountNumber();
+
     }
 
     private String generateBankAccountNumber() {
@@ -22,6 +23,10 @@ public class BankAccountNumber {
 
     public String getBankAccountNumber() {
         return bankAccountNumber;
+    }
+
+    public void setBankAccountNumber(String bankAccountNumber) {
+        this.bankAccountNumber = bankAccountNumber;
     }
 
 }
