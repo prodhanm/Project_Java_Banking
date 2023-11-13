@@ -12,12 +12,6 @@ public class LoginUser {
             BufferedReader reader = new BufferedReader(new FileReader("customer_data.txt"));
             String line = reader.readLine();
             while (line != null) {
-                //String[] data = line.split(",");
-                /*if (data[0].equals(username) && UserAuth.authenticate(data[1], password)) {
-                    reader.close();
-                    return true; 
-                }*/
-                //for (String pair: line) {
                     String[] pair = line.split(":");
                     if (pair[0].equals("User Name")) {
                         bankUser.setUserName(pair[1]);
@@ -26,8 +20,7 @@ public class LoginUser {
                         bankUser.setPassword(pair[1]);
                     }
                     line = reader.readLine();
-                //}
-            }
+                }
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
